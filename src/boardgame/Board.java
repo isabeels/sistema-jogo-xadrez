@@ -28,4 +28,11 @@ public class Board {
 		this.columns = columns;
 	}
 	
+	public Piece piece (int row, int column) { //retorna a peca no tabuleiro pela coluna e linha.
+		return pieces [row][column];
+	}
+	public Piece piece (Position position) { //sobrecarga do metódo. retorna a peca pela posicao
+		return pieces [position.getRow()][position.getColumn()];
+		
+	}
 }
